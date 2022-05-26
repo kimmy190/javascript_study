@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Html meets JS Event</title>
+    </head>
+    <body>
+        <input type="button" value="hi" onclick="alert('hi')">
+        <!-- value of onclick shoudl be Javascript -->
+        <!-- by setting the onclick value to be hi, can see that another pop up website appears saying hi -->
+        
+        <input type="text" onchange="alert('changed')">
+        <!-- when u type something into the textbox, and move your ,mouse outside, 
+            the onchange event will be executed
+        -->
+
+
+        <!-- by using these webpages, we can make a website that can interact with each other
+        
+        to know more of the event that webpage can have, can search up :
+        "javascript keydown event attribute"
+        -->
+
+        <input type="text" onkeydown="alert('key down!')">
+        <!-- this activates the key down pop up whenever we put our key down, 
+            so trying to type something-->
+        
+    
+    </body>
+</html>
