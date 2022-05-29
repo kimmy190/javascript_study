@@ -1,0 +1,49 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Application of arrays and loop</title>
+        <script>
+            function nightDayHandler(self){
+                var target = document.querySelector('body');
+                if(self.value === 'night'){
+                    target.style.backgroundColor = 'black';
+                    target.style.color = 'white';
+                    self.value = 'day';
+                    var alist = document.querySelectorAll('a');
+                    var i = 0;
+                    while(i < alist.length){
+                        alist[i].style.color = 'powderblue';
+                        i = i + 1; 
+                    }
+                } else {
+                    target.style.backgroundColor = 'white';
+                    target.style.color = 'black';
+                    self.value = 'night';
+                    
+                    var alist = document.querySelectorAll('a');
+                    var i = 0;
+                    while(i < alist.length){
+                        alist[i].style.color = 'blue';
+                        i = i + 1; 
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h2><a href="#">WEB</a></h2>
+        <input type="button" value="night" onclick="nightDayHandler(this)
+        ">
+
+        <ul>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+        </ul>
+
+        <h1>Javascript</h1>
+        <p>blahdhwenienc;eaewfneiitalskwcame to hout that it owuld thinhk domr kinf oh sniksld sldooo iy sfif noy </p>
+        
+    </body>
+</html>
