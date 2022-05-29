@@ -1,0 +1,69 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Application of arrays and loop</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+
+            var Link = {
+                setColor:function(color){
+                    // var alist = document.querySelectorAll('a');
+                    // var i =0;
+                    // while(i < alist.length){
+                    //     alist[i].style.color = color;
+                    //     i = i + 1; 
+                    // }
+                    $('a').css('color', color); 
+                }
+            }
+
+            var Body = {
+                setColor:function(color){
+                    // document.querySelector('body').style.color = color;
+                    $('body').css('color', color);
+                }, 
+
+                setBackgroundColor:function(color){
+                    // document.querySelector('body').style.backgroundColor = color;
+                    $('body').css('backgroundColor', color);
+                }
+            }
+
+
+            function nightDayHandler(self){
+                var target = document.querySelector('body');
+                if(self.value === 'night'){
+
+                    Body.setBackgroundColor('black');
+                    Body.setColor('white');
+                    self.value = 'day';
+                    Link.setColor('powderblue');
+
+                } else {
+                    Body.setBackgroundColor('white');
+                    Body.setColor ('black');
+                    self.value = 'night';
+                    Link.setColor('blue');
+                }
+            }
+
+        </script>
+
+
+    </head>
+    <body>
+        <h2><a href="#">WEB</a></h2>
+        <input type="button" value="night" onclick="nightDayHandler(this)">
+
+        <ul>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+        </ul>
+
+        <h1>Javascript</h1>
+        <p>blahdhwenienc;eaewfneiitalskwcame to hout that it owuld thinhk domr kinf oh sniksld sldooo iy sfif noy </p>
+        
+    </body>
+</html>
