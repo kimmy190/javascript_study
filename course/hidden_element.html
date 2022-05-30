@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #text{
+            display:none;
+        }
+    </style>
+
+    <script>
+        function clickMe(self){
+            if(self.value === 'click meh'){
+                document.getElementById('text').style.display = 'block';
+                self.value = 'hide meh';
+            } else {
+                document.getElementById('text').style.display = 'none';
+                self.value = 'click meh';
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Omg hiiii</h1>
+    <p id="text">Hello javascript ahj the food seems like there r so much animal oill yuck</p>
+    <input type="button" value="click meh" onclick="
+        clickMe(this)
+        // document.getElementById('text').style.display = 'block'
+    ">
+
+</body>
+</html>

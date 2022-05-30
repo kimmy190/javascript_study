@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function onClick(self){
+            if(self.value === 'Turn on the light'){
+                document.getElementById('bulb-off').src='https://cdn-icons-png.flaticon.com/512/702/702797.png';
+                self.value = 'Turn off the light';
+            } else{
+                document.getElementById('bulb-off').src='https://cdn-icons-png.flaticon.com/512/702/702814.png';
+                self.value='Turn on the light';
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Practicing the change of image thru Javascript</h1>
+    <input type="button" value="Turn on the light" onclick="
+        onClick(this)
+        // document.getElementById('bulb-off').src='https://cdn-icons-png.flaticon.com/512/702/702797.png'
+    ">
+
+    <img id="bulb-off" src="https://cdn-icons-png.flaticon.com/512/702/702814.png" style="width:270px;">
+
+    <!-- <input type="button" value="Turn off the light" onclick="
+        document.getElementById('bulb-off').src='https://cdn-icons-png.flaticon.com/512/702/702814.png'  
+    "> -->
+</body>
+</html>
